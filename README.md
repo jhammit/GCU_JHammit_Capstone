@@ -41,6 +41,9 @@ Provide step-by-step instructions on how to install your project. For example:
 7. Refer to YAML file for login setup, however, login information has been copied below for reference:
    - Username - Password: Test - 456
   
+8. If you are attempting to use the Faster R-CNN model for testing, please utilize the pre-built model through Kaggle: https://www.kaggle.com/models/google/faster-rcnn-inception-resnet-v2
+   - To use, you will need to download the model file and add it to your program's files.
+  
 
 ## Usage
 
