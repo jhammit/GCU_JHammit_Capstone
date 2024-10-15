@@ -1,0 +1,14 @@
+credentials:
+  usernames:
+    jham:
+      email: joffrey.hammit@gmail.com
+      name: Joffrey Hammit
+      password: $2b$12$djGLVEo4NFqCIr7V5YO6W.kz9Zu3Gnb4ig/Z91p5Ald0dJvd4pUp2  # Hashed separately
+    test:
+      email: test@gmail.com
+      name: Test User
+      password: $2b$12$SrXPVhkN1VFPrnU7XyOS7e87CR6Ak5nQkdTkcRTKwQmWPhpGmeKZW  # Hashed separately
+cookie:
+  name: test
+  key: test
+  expiry_days: 30
