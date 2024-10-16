@@ -20,7 +20,7 @@ Provide step-by-step instructions on how to install your project. For example:
    ```bash
    git clone https://github.com/yourusername/GCU_JHammit_Capstone.git
 
-2. Open terminal and navigate to project directory:
+2. Open terminal and navigate to project directory, and then avtivate a Virtual Environment appropriate for your operating system:
     ```bash
    cd GCU_JHammit_Capstone.git
 
