@@ -1,0 +1,22 @@
+# JHammit OpenCL Kernel
+__kernel void resize(__global const uchar *input_image,
+                     __global uchar *output_image,
+                     const int input_width,
+                     const int input_height,
+                     const int output_width,
+                     const int output_height) {
+    int x = get_global_id(0);
+    int y = get_global_id(1);
+
+    if (x >= output_width || y >= output_height) return;
+
+    int src_x = (int)((float)x / output_width * input_width);I
+    int src_y = (int)((float)y / output_height * input_height);
+
+    int src_idx = (src_y * input_width + src_x) * 3; // Assuming 3 channels (RGB)
+    int dst_idx = (y * output_width + x) * 3;
+
+    output_image[dst_idx] = input_image[src_idx];
+    output_image[dst_idx + 1] = input_image[src_idx + 1];
+    output_image[dst_idx + 2] = input_image[src_idx + 2];
+}
